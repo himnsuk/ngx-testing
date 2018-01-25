@@ -1,0 +1,12 @@
+<span (click)="sidenav.toggle()"><i class="fa fa-bars"></i> <h1>{{title}}</h1></span>
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    <a routerLink="/dashboard" (click)="sidenav.close()" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/heroes" (click)="sidenav.close()" routerLinkActive="active">Heroes</a>
+  </md-sidenav>
+  <div class="example-sidenav-content">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</md-sidenav-container>

@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 7.2.0
+
+test:
+  post:
+    - mkdir -p $CIRCLE_ARTIFACTS/node-7.2.0
+    - mv coverage $CIRCLE_ARTIFACTS/node-7.2.0/coverage-report
